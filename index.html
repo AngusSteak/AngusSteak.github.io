@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angus | Personal Website</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --fg: #1d1d1f;
+      --muted: #6b6b70;
+      --accent: #2f6fde;
+      --card: #ffffff;
+      --border: #e3e3e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141416;
+        --fg: #ececee;
+        --muted: #9a9aa2;
+        --accent: #7aa7ff;
+        --card: #1d1d21;
+        --border: #2c2c32;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 20px 40px;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.15rem;
+      margin: 0 0 40px;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+    }
+    a { color: var(--accent); }
+    ul { margin: 0; padding-left: 20px; }
+    footer {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hi, I'm Angus</h1>
+    <p class="tagline">Year 3 student at HKUST</p>
+
+    <section>
+      <h2>About me</h2>
+      <p>I'm studying at the Hong Kong University of Science and Technology. This site was built for ELEC3120 (Computer Communication Networks) and is hosted on GitHub Pages.</p>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Computer networks</li>
+        <li>Programming</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><a href="https://github.com/AngusSteak">GitHub</a></p>
+    </section>
+  </main>
+  <footer>&copy; 2026 Angus</footer>
+</body>
+</html>
